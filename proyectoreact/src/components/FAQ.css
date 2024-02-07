@@ -1,0 +1,10 @@
+
+#FAQ {
+  border-radius: 20px;
+  height: auto;
+  padding: 10px;
+}
+
+#FAQ .container {
+  color: black !important;
+}

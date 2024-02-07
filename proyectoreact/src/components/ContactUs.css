@@ -1,0 +1,74 @@
+/* Agrega una clase a tu formulario para seleccionarlo específicamente */
+#formo h1{
+ color: #686161 !important;
+}
+
+.form-restrictive {
+    max-width: 400px;
+    margin: 20px auto;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Elimina los estilos de Bootstrap para los elementos de formulario */
+.form-restrictive label,
+.form-restrictive input,
+.form-restrictive textarea,
+.form-restrictive input[type="submit"] {
+    margin: 0;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+}
+
+/* Añade algún espacio entre los elementos para mejorar la apariencia */
+.form-restrictive label,
+.form-restrictive input,
+.form-restrictive textarea {
+    margin-bottom: 15px;
+}
+
+/* Estiliza el botón de enviar */
+.form-restrictive input[type="submit"] {
+    border-radius: 20px;
+    background-color: #7FA9F1;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Cambia el estilo del cursor al pasar sobre el botón */
+.form-restrictive input[type="submit"]:hover {
+    background-color: green;
+}
+
+/* Styling for input fields */
+input {
+    height: 60px;
+    padding: 10px;
+    border-radius: 25px;
+    box-sizing: border-box;
+}
+
+input[type="text"]{
+    width: 50%;
+}
+
+/* Styling for textarea */
+textarea {
+    border-radius: 15px;
+    resize: vertical; /* Allow vertical resizing only */
+}
+  
+/* Styling for labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Animation for placeholder */
+input:focus::placeholder {
+    transform: translateY(-12.5px);
+    transition: transform 0.3s ease-out;
+}

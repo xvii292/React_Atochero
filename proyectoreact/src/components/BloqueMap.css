@@ -1,0 +1,46 @@
+
+/* Aplica estilos específicos para la sección "Encuentra nuestros locales" */
+#encuentra-nuestros-locales {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background: linear-gradient(to bottom, #7EA8F1, #FFFFFF);
+    background-blend-mode: overlay;
+  }
+  
+  #encuentra-nuestros-locales .container {
+    display: flex;
+    height: auto;
+    width: 100%;
+  }
+  
+  #encuentra-nuestros-locales h1 {
+    font-weight: 700;
+    color: black;
+    opacity: 0.6;
+  }
+  
+  #encuentra-nuestros-locales p {
+    font-size: large;
+    color: black;
+    opacity: 0.5;
+  }
+  
+  #encuentra-nuestros-locales .map-container {
+    flex: 1;
+    max-width: 1000px;
+    /* Ajusta según el ancho que desees para el mapa */
+  }
+  
+  #encuentra-nuestros-locales .content {
+    flex: 1;
+    text-align: left;
+    margin-right: 40px;
+    /* Espacio entre el mapa y la sección */
+  }
+  
+  #encuentra-nuestros-locales iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }

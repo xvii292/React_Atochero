@@ -9,7 +9,7 @@ body {
 .App-header {
   margin-top: -5%;
   background-color: #282c34;
-  height: 80px;
+  height: 85px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -20,119 +20,69 @@ body {
   z-index: 999;
 }
 
-.navbar-collapse {
-  letter-spacing: 2px;
-  border-radius: 25px;
-}
-
-.App-logo {
-  height: 45px;
-  pointer-events: none;
-}
-
-.navbar {
-  position: block;
-  width: 100%;
-  border-radius: 25px;
-  white-space: nowrap;
-}
-
-.nav-item {
-  font-size: 16px;
-  margin-right: 2%;
-}
-
-.nav-item a {
-  font-weight: 500;
-}
-
-.nav-link {
-  margin-left: 8%;
-  letter-spacing: 1px;
-}
-
-.nav-link:hover {
-  font-weight: bold;
-}
-
-#navbarNav {
-  margin-left: 50%;
-}
-
-/* Estilos del enlace */
-.App-link {
-  color: #61dafb;
-  text-decoration: none;
-}
-
-.App-link:hover {
-  text-decoration: underline;
-}
-
-.nav-item::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 22.5px;
-  width: 120%;
-  height: 4px;
-  /* Grosor del borde */
-  background-color: #3d10ab;
-  /* Color del borde */
-  border-radius: 25px;
-  /* Radio de borde para suavizar las esquinas */
-  transform: scaleX(0);
-  /* Inicialmente, el borde está invisible */
-  transform-origin: bottom right;
-  /* La animación comenzará desde la esquina inferior derecha */
-  transition: transform 0.8s ease-in-out;
-}
-
-.nav-item:hover::before {
-  transform: scaleX(0.8);
-  /* Hacer visible el borde al 100% */
-  transform-origin: bottom left;
-  /* La animación se realizará hacia la izquierda */
-}
-
 /* Estilos de secciones */
-.section {
+#encuentra-nuestros-locales .section,
+#inicio .section {
   padding: 50px 0;
   background-color: #f9f9f9;
 }
 
 .container {
+  color: aliceblue;
   text-align: center;
-  max-width: 800px;
+  max-width: 70%;
   margin: 0 auto;
-  background-color: rgba(240, 248, 255, 0.92);
   padding: 20px;
   border-radius: 20px;
 }
 
 #recursos,
 #FAQ {
-  background-color: #ccc;
+
   border-radius: 20px;
   height: auto;
   padding: 10px;
 }
 
+#recursos h2 {
+  font-size: 20px;
+  font-weight: 650;
+  color: rgb(47, 47, 47);
+  margin-top: 1%;
+}
+
+#recursosh2{
+  opacity: 0.9;
+  margin-left: 10%;
+  padding: 3px;
+  width: 80%;
+  background-color: rgba(180, 180, 180, 0.9);
+  margin-bottom: 2%;
+  border-radius: 25px;
+}
+
+#FAQ .container {
+  color: black !important;
+}
+
 /* Estilos específicos para la sección de Inicio */
 .section#inicio {
   margin-top: 5%;
-  background-color: #f5f5f5;
   background: url(assets/fondoAA.jpg)no-repeat center center;
   background-size: cover;
 }
 
 .section#inicio h1 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 2.5rem;
+  font-weight: 900;
   margin-bottom: 20px;
 }
 
 .section#inicio p {
+  text-shadow: #7EA8F1;
   font-size: 16px;
+  font-weight: 700;
   margin-bottom: 15px;
 }
 
@@ -142,52 +92,20 @@ body {
   padding: 0;
 }
 
-.section#inicio ul li a {
+.section #inicio ul li a {
   list-style-type: none;
   list-style: none;
   text-decoration: none;
   color: #0366d6;
 }
 
-.section#inicio ul li a:hover {
+.section #inicio ul li a:hover {
   text-decoration: underline;
 }
 
-/* Estilos para los inputs */
-input {
-  width: 40%;
-  padding: 10px;
-  margin-top: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  transition: border-color 0.3s ease;
-}
-
-/* Estilos para el foco en los inputs */
-input:focus {
-  border-color: #4caf50;
-}
-
-/* Estilos para las etiquetas */
-label {
-  display: block;
-  margin-bottom: 5px;
-  color: #555;
-}
-
-/* Estilos para el botón */
-button {
-  background-color: #3d10ab;
-  color: #fff;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-  width: 30%;
-  transition: background-color 0.3s ease;
+#ultEnlace {
+  margin-top: 5%;
+  font-weight: 700;
 }
 
 /* Estilos para el botón en estado hover */
@@ -196,14 +114,17 @@ button:hover {
 }
 
 #BYN .container {
+  background: radial-gradient(circle at center bottom, #80AAF1, #FFFFFF);
   text-align: center;
-  max-width: 800px;
+  width: 200%;
+  height: auto;
   margin: 0 auto;
-  background-color: aliceblue;
   padding: 20px;
   border-radius: 20px;
   filter: brightness(90%);
   transform: scale(0.8);
+  border-bottom-left-radius: 0%;
+  border-bottom-right-radius: 0%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -229,143 +150,3 @@ button:hover {
     filter: 0 0 5px rgba(0, 0, 0, 0.3);
   }
 }
-
-footer {
-  background-color: #282C34;
-  color: black;
-  padding: 20px 0;
-  text-align: justify;
-}
-
-footer h2 {
-  color: white !important;
-  font-weight: bold;
-}
-
-footer strong{
-  color: white;
-}
-
-footer p, footer li{
-  color: #ccc;
-}
-
-.footer-container {
-  display: flex;
-  justify-content: space-between; /* Cambié space-around a space-between */
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.contact-column,
-.social-column {
-  flex: 1;
-}
-
-.contact-column h2,
-.social-column h2 {
-  color: #333;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-.contact-column ul li {
-  margin-bottom: 10px;
-  text-align: justify;
-}
-
-.contact-column p {
-  text-align: justify;
-}
-
-.social-column {
-  text-align: right;
-}
-
-.social-icons {
-  display: flex;
-  justify-content: flex-end; /* Cambié center a flex-end */
-  align-items: center;
-}
-
-.social-icons a {
-  margin: 0 10px;
-  text-decoration: none;
-  display: inline-block;
-}
-
-.social-icons img {
-  width: 40px; /* Ajusta el tamaño de acuerdo a tus necesidades */
-  height: auto;
-}
-
-/* Agrega una clase a tu formulario para seleccionarlo específicamente */
-.form-restrictive {
-  max-width: 300px; /* Ajusta el ancho máximo según tus necesidades */
-  margin: 0 auto; /* Centra el formulario en la página */
-}
-
-/* Elimina los estilos de Bootstrap para los elementos de formulario */
-.form-restrictive label,
-.form-restrictive input,
-.form-restrictive textarea,
-.form-restrictive input[type="submit"] {
-  margin: 0; /* Elimina el margen predeterminado */
-  width: 100%; /* Ajusta el ancho al 100% del contenedor */
-  display: block; /* Muestra los elementos en bloques para que ocupen el ancho completo */
-  box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
-}
-
-/* Añade algún espacio entre los elementos para mejorar la apariencia */
-.form-restrictive label,
-.form-restrictive input,
-.form-restrictive textarea {
-  margin-bottom: 10px;
-}
-
-/* Estiliza el botón de enviar */
-.form-restrictive input[type="submit"] {
-  background-color: #007bff; /* Cambia el color de fondo según tus preferencias */
-  color: #fff; /* Cambia el color del texto según tus preferencias */
-  padding: 10px; /* Ajusta el relleno del botón según tus preferencias */
-  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-}
-
-/* Cambia el estilo del cursor al pasar sobre el botón */
-.form-restrictive input[type="submit"]:hover {
-  background-color: #1bb300; /* Cambia el color de fondo al pasar sobre el botón */
-}
-
-/* Aplica estilos específicos para la sección "Encuentra nuestros locales" */
-#encuentra-nuestros-locales {
-  display: flex;
-  justify-content: space-between;
-  background: linear-gradient(to bottom, #7EA8F1, #FFFFFF);
-  background-blend-mode: overlay;
-}
-
-#encuentra-nuestros-locales .container {
-  display: flex;
-  width: 100%;
-}
-
-#encuentra-nuestros-locales .map-container {
-  flex: 1;
-  max-width: 1000px; /* Ajusta según el ancho que desees para el mapa */
-}
-
-#encuentra-nuestros-locales .content {
-  flex: 1;
-  text-align: left;
-  margin-right: 40px; /* Espacio entre el mapa y la sección */
-}
-
-#encuentra-nuestros-locales iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-

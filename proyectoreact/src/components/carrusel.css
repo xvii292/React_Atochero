@@ -1,0 +1,13 @@
+.slick-prev,
+.slick-next {
+  font-size: 0; /* Oculta el texto estableciendo el tamaño de la fuente en 0 */
+  z-index: 90;
+  border-radius: 30px;
+  top: 50%;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  color: #fff;
+}
+

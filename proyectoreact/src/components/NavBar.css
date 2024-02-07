@@ -1,0 +1,79 @@
+.navbar-collapse {
+  position: block;
+  letter-spacing: 2px;
+  border-radius: 25px;
+}
+
+.App-logo {
+  height: 45px;
+  pointer-events: none;
+}
+
+.navbar {
+  position: block;
+  width: 100%;
+  border-radius: 25px;
+  white-space: nowrap;
+}
+
+.nav-item {
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 2%;
+}
+
+.nav-item a {
+  display: inline-block;
+  font-weight: 500;
+  margin-right: 20%;
+  display: block;
+}
+
+.nav-link {
+  margin-right: 25%;
+  letter-spacing: 1px;
+}
+
+.nav-link:hover {
+  font-weight: bold;
+}
+
+#navbarNav {
+  margin-left: 60%;
+}
+
+/* Estilos del enlace */
+.App-link {
+  color: #61dafb;
+  text-decoration: none;
+}
+
+.App-link:hover {
+  text-decoration: underline;
+}
+
+.nav-item::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 820px;
+  width: 50%;
+  height: 4px;
+  /* Grosor del borde */
+  background-color: #3d10ab;
+  /* Color del borde */
+  border-radius: 25px;
+  /* Radio de borde para suavizar las esquinas */
+  transform: scaleX(0);
+  /* Inicialmente, el borde está invisible */
+  transform-origin: bottom right;
+  /* La animación comenzará desde la esquina inferior derecha */
+  transition: transform 0.8s ease-in-out;
+}
+
+.nav-item:hover::before {
+  transform: scaleX(0.8);
+  /* Hacer visible el borde al 100% */
+  transform-origin: bottom left;
+  /* La animación se realizará hacia la izquierda */
+}
